@@ -20,7 +20,8 @@ $(document).ready(function() {
   $(".home").on("click", function() {
     $(".whitebar").animate(
       {
-        width: "30%"
+        width: "30%",
+        marginLeft: "0"
       },
       1000
     );
@@ -37,7 +38,8 @@ $(document).ready(function() {
   $(".aboutme").on("click", function() {
     $(".whitebar").animate(
       {
-        width: "100%"
+        width: "100%",
+        marginLeft: "0"
       },
       1000
     );
@@ -54,7 +56,8 @@ $(document).ready(function() {
   $(".projects").on("click", function() {
     $(".whitebar").animate(
       {
-        width: "100%"
+        width: "100%",
+        marginLeft: "50%"
       },
       1000
     );
