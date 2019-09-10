@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  //  ON NAVBAR LINK CLICK, SCROLL TO SECTION
   $("a").on("click", function(e) {
     if (this.hash !== "") {
       e.preventDefault();
@@ -13,11 +14,56 @@ $(document).ready(function() {
         }
       );
     } // end if
-    /*
-    $("a").css("color", "#ff4343");
   });
-});
-$("a:nth-child(0)").on("click", function() {
-  $("a").css("color", "#fff");*/
+
+  // animate home page on home link click
+  $(".home").on("click", function() {
+    $(".whitebar").animate(
+      {
+        width: "30%"
+      },
+      1000
+    );
+
+    $(".navlink").animate(
+      {
+        color: "#fff"
+      },
+      600
+    );
+  });
+
+  // animate about me page on aboutme link click
+  $(".aboutme").on("click", function() {
+    $(".whitebar").animate(
+      {
+        width: "100%"
+      },
+      1000
+    );
+
+    $(".navlink").animate(
+      {
+        color: "#ff4343"
+      },
+      600
+    );
+  });
+
+  // animate projects on projects link click
+  $(".projects").on("click", function() {
+    $(".whitebar").animate(
+      {
+        width: "100%"
+      },
+      1000
+    );
+
+    $(".navlink").animate(
+      {
+        color: "#ff4343"
+      },
+      600
+    );
   });
 });
