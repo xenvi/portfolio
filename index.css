@@ -71,7 +71,9 @@ html,
 }
 #intro > span {
   color: #333;
-  opacity: 0.8;
+  text-decoration: underline;
+  text-decoration-color: #fff3f3;
+  text-decoration-style: wavy;
   font-size: 2rem;
   font-weight: bold;
 }
