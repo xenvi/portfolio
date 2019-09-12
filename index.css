@@ -134,28 +134,26 @@ html,
   margin-top: -20em;
   text-align: center;
   z-index: 0;
+  box-shadow: 1.5em 1.5em 0 #ce4b4b;
 }
 .project {
   width: 50%;
   height: 50%;
   z-index: 0;
 }
+/* project image  */
 .project > img {
   display: block;
   position: relative;
   width: auto;
   height: 100%;
-  transition: 0.2s all ease-in-out;
 }
-.project > img:hover {
-  transform: scale(1.25);
-  transition: 0.2s all ease-in-out;
-}
+
 .project:nth-child(1) > img {
   margin-left: -25%;
 }
 .project:nth-child(2) > img {
-  margin-left: -20%;
+  margin-left: -21%;
 }
 .project:nth-child(3) > img {
   margin-left: -24%;
@@ -164,10 +162,92 @@ html,
   margin-left: -15%;
 }
 
-.redOverlay {
-  width: 100%;
+/* overlay top projects */
+.project .redOverlayTop {
+  width: 50%;
   height: 100%;
+  position: absolute;
+  bottom: -50%;
+  transition: bottom 0.5s ease;
+  background: #fff3f3;
+  text-align: center;
+}
+.project:hover .redOverlayTop {
+  bottom: 0%;
+}
+
+/* overlay bottom projects */
+.project .redOverlayBottom {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: -100%;
+  transition: bottom 0.5s ease;
+  background: #fff3f3;
+  text-align: center;
+}
+.project:hover .redOverlayBottom {
+  bottom: 0%;
+}
+
+/* project language row */
+.project-lang {
+  color: #333;
+}
+.project-lang > span {
+  display: inline-block;
+  position: relative;
+  margin-top: 1em;
+  padding: 0.2em;
+  border-radius: 5px;
+  border: 1px solid #ff4343;
+}
+
+/* project description row */
+.project-desc {
+  display: block;
+  color: #333;
+  font-weight: bold;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* project link to github / live row */
+.redOverlayTop > .project-links {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100%;
   background: #ff4343;
+  height: 5.75em;
+  padding: 1em;
+  top: 50%;
+  margin-top: -5.75em;
+  border-top: 0.5em solid #ce4b4b;
+}
+.redOverlayBottom > .project-links {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100%;
+  background: #ff4343;
+  height: 5.75em;
+  padding: 1em;
+  top: 100%;
+  margin-top: -5.75em;
+  border-top: 0.5em solid #ce4b4b;
+}
+
+.project-links > a > i {
+  font-size: 1.5em;
+  color: #fff3f3;
+}
+.project-links > a > span {
+  color: #fff3f3;
+  display: block;
+}
+.project-links > a:hover {
+  text-decoration: none;
 }
 
 /*** ABOUTME PAGE ***/
