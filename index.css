@@ -52,6 +52,7 @@ html,
   border: 4em solid #fff;
   background: transparent;
   position: fixed;
+  top: 0;
   z-index: 0;
 }
 
@@ -78,27 +79,44 @@ html,
   font-weight: bold;
 }
 
-.icons {
+.iconsTop {
   display: flex;
-  flex-direction: column;
-  width: 2em;
-  height: 11em;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4em;
   position: fixed;
-  left: 0;
-  top: 50%;
-  margin-top: -5.5em;
-  margin-left: 1em;
+  top: 0;
   z-index: 2;
 }
 
 .contact {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   color: #333;
   font-size: 1.75rem;
+}
+
+.iconsBottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4em;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
   transition: 0.5s all ease-in-out;
 }
-.contact:hover {
+.iconsBottom > a > i {
+  color: #333;
+  font-size: 2rem;
+  transition: 0.5s all ease-in-out;
+}
+.iconsBottom > a > i:hover {
+  color: #ff4343;
   transition: 0.5s all ease-in-out;
 }
 
@@ -224,6 +242,9 @@ html,
   top: 50%;
   margin-top: -5.75em;
   border-top: 0.5em solid #ce4b4b;
+}
+.redOverlayTop > .project-links > a:hover {
+  margin-top: -0.5em;
 }
 .redOverlayBottom > .project-links {
   display: flex;
