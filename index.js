@@ -21,6 +21,7 @@ $(document).ready(function() {
     $(".whitebar").animate(
       {
         width: "30%",
+        height: "100%",
         marginLeft: "0"
       },
       1000
@@ -39,6 +40,8 @@ $(document).ready(function() {
     $(".whitebar").animate(
       {
         width: "100%",
+        height: "58%",
+        bottom: "0",
         marginLeft: "0"
       },
       1000
@@ -57,7 +60,8 @@ $(document).ready(function() {
     $(".whitebar").animate(
       {
         width: "100%",
-        marginLeft: "50%"
+        height: "100%",
+        marginLeft: "70%"
       },
       1000
     );
