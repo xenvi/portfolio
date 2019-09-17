@@ -9,6 +9,10 @@ html,
   font-family: "Karla", sans-serif;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 /** NAVBAR **/
 .navbar {
   text-align: right;
@@ -170,10 +174,10 @@ html,
   margin-left: -25%;
 }
 .project:nth-child(2) > img {
-  margin-left: -17%;
+  margin-left: -16%;
 }
 .project:nth-child(3) > img {
-  margin-left: -17%;
+  margin-left: -16%;
 }
 .project:nth-child(4) > img {
   margin-left: -15%;
@@ -403,17 +407,21 @@ html,
     height: 3em;
   }
 
+  .navbar {
+    margin-top: 3.5rem;
+  }
+
   .navbar > ul > li {
     text-shadow: 0 0 0.1em rgb(117, 2, 2);
   }
 
   .bio {
     font-size: 0.9em;
-    width: 30em;
+    max-width: 30em;
     margin-left: -15em;
   }
   .bio > h1 {
-    color: #ce4b4b;
+    color: #333;
   }
   .aboutme-content {
     height: 29em;
