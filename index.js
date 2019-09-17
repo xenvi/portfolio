@@ -74,3 +74,7 @@ $(document).ready(function() {
     );
   });
 });
+
+targetElement.ontouchend = (e) => {
+  e.preventDefault();
+};
