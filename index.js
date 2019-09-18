@@ -1,4 +1,6 @@
-$("a").on("click", function(e) {
+$(document).ready(function() {
+  //  ON NAVBAR LINK CLICK, SCROLL TO SECTION
+  $("a").on("click", function(e) {
     if (this.hash !== "") {
       e.preventDefault();
       var hash = this.hash;
