@@ -421,7 +421,7 @@ html,
     margin-top: 2em;
   }
   .bio {
-    margin-top: 8em;
+    margin-top: 6em;
   }
 
   .projects-container {
@@ -435,6 +435,9 @@ html,
 
 @media only screen and (max-width: 780px) {
   /* aboutme */
+  .bio {
+    margin-top: 5em;
+  }
   .aboutme-content {
     width: 32%;
     height: 29em;
@@ -473,12 +476,13 @@ html,
   .aboutme-content > p {
     font-size: 0.9em;
   }
+  /* PROJECTS */
 
   .projects-container {
     width: 85%;
     margin-left: -45%;
     height: 70%;
-    margin-top: -60%;
+    margin-top: -70%;
   }
 
   #intro > span {
