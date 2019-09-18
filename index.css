@@ -479,11 +479,12 @@ html,
   .projects-container {
     width: 85%;
     margin-left: -45%;
-    height: 65%;
-    margin-top: -35%;
+    height: 70%;
+    margin-top: -60%;
   }
 
   #intro > span {
     text-decoration: none;
   }
 }
+
