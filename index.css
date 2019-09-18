@@ -462,7 +462,7 @@ html,
   .bio {
     font-size: 0.9em;
     width: 90%;
-    margin-left: -15em;
+    margin-left: -45%;
   }
   .bio > h1 {
     color: #333;
@@ -481,6 +481,6 @@ html,
   }
 
   #intro > span {
-    text-decoration-color: #ff4343;
+    text-decoration: none;
   }
 }
