@@ -24,6 +24,15 @@ if (windowsize <= 1080) {
     {
       width: "100%",
       height: "100%",
+      marginTop: "40%"
+    },
+    1000
+  );
+} else if (windowsize <= 780) {
+  $(".whitebar").animate(
+    {
+      width: "100%",
+      height: "100%",
       marginTop: "62.5%"
     },
     1000
