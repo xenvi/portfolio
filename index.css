@@ -314,6 +314,9 @@ html,
 .project-links > a:hover {
   text-decoration: none;
 }
+.projectsHeading {
+  display: none;
+}
 
 /*** ABOUTME PAGE ***/
 .aboutme-container {
@@ -436,7 +439,7 @@ html,
 @media only screen and (max-width: 780px) {
   /* aboutme */
   .bio {
-    margin-top: 5em;
+    margin-top: 5.5em;
   }
   .aboutme-content {
     width: 32%;
@@ -482,7 +485,12 @@ html,
     width: 85%;
     margin-left: -45%;
     height: 70%;
-    margin-top: -70%;
+    margin-top: -20em;
+  }
+
+  .projectsHeading {
+    display: block;
+    color: #fff3f3;
   }
 
   #intro > span {
@@ -505,7 +513,7 @@ html,
 
   .navbar {
     margin-top: 0;
-    padding-top: 0.5em;
+    padding-top: 1em;
     height: 3.5em;
     background: #ff4343;
   }
