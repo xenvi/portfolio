@@ -146,9 +146,14 @@ html,
   color: #ff4343;
   transition: 0.5s all ease-in-out;
 }
+.iconsIntro {
+  display: none;
+  align-items: center;
+}
 
+/** BG BOX COLORS **/
 .redbg {
-  background-image: linear-gradient(160deg, #e14747, #ff4343, #ff4343);
+  background: #ff4343;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -439,7 +444,7 @@ html,
     height: 3em;
   }
   .iconsTop {
-    background-image: linear-gradient(160deg, #e14747, #e14747, #ff4343);
+    background: #ff4343;
     color: #fff3f3;
   }
   .iconsTop > i {
@@ -450,14 +455,6 @@ html,
   }
   .borderRight {
     background: none;
-  }
-
-  .navbar {
-    margin-top: 3.5rem;
-  }
-
-  .navbar > ul > li {
-    text-shadow: 0 0 0.1em rgb(117, 2, 2);
   }
 
   .bio {
@@ -480,11 +477,34 @@ html,
     width: 85%;
     margin-left: -45%;
     height: 70%;
-    margin-top: -55%;
+    margin-top: -60%;
   }
 
   #intro > span {
     text-decoration: none;
   }
-}
+  #intro {
+    height: 250px;
+    margin-top: -125px;
+  }
+  .iconsIntro {
+    display: flex;
+  }
+  .iconsIntro,
+  .iconsIntro > i {
+    color: #ff4343;
+  }
+  .iconsTop {
+    display: none;
+  }
 
+  .navbar {
+    margin-top: 0;
+    height: 4em;
+    background: #ff4343;
+  }
+
+  .navbar > ul > li {
+    text-shadow: 0 0 0.1em rgb(117, 2, 2);
+  }
+}
