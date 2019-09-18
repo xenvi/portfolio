@@ -23,6 +23,7 @@ html,
   margin-top: -5rem;
   margin-right: 2rem;
   position: fixed;
+  z-index: 7;
 }
 
 .navbar > ul > li {
@@ -48,6 +49,7 @@ html,
   width: 100%;
   height: 100vh;
 }
+/*
 #border {
   width: 100vw;
   height: 100vh;
@@ -55,8 +57,7 @@ html,
   background: transparent;
   position: fixed;
   top: 0;
-  z-index: 0;
-}
+}*/
 
 /** HOME **/
 #intro {
@@ -66,7 +67,7 @@ html,
   top: 50%;
   margin-top: -100px;
   left: 10%;
-  z-index: -1;
+  z-index: 5;
 }
 #intro > h1 {
   color: #ff4343;
@@ -92,7 +93,28 @@ html,
   height: 4em;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 15;
+  background: #fff3f3;
+}
+
+.borderLeft {
+  width: 4em;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  background: #fff3f3;
+}
+
+.borderRight {
+  width: 4em;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 15;
+  background: #fff3f3;
 }
 
 .contact {
@@ -111,8 +133,9 @@ html,
   height: 4em;
   position: fixed;
   bottom: 0;
-  z-index: 2;
+  z-index: 15;
   transition: 0.5s all ease-in-out;
+  background: #fff3f3;
 }
 .iconsBottom > a > i {
   color: #333;
@@ -129,14 +152,14 @@ html,
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: -4;
+  z-index: 2;
 }
 .whitebar {
   background: #fff3f3;
   position: fixed;
   width: 30%;
   height: 100%;
-  z-index: -3;
+  z-index: 1;
 }
 
 /*** PROJECTS PAGE ***/
@@ -149,7 +172,7 @@ html,
   width: 60%;
   height: 40em;
   position: relative;
-  z-index: 1;
+  z-index: 6;
   left: 50%;
   margin-left: -30%;
   top: 50%;
@@ -225,11 +248,14 @@ html,
 
 /* project description row */
 .project-desc {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #333;
   font-weight: bold;
   padding-left: 2em;
   padding-right: 2em;
+  height: 10em;
 }
 
 /* project link to github / live row */
@@ -294,7 +320,7 @@ html,
 }
 .aboutme-content {
   width: 18%;
-  height: 25em;
+  height: 50%;
   background: #fff3f3;
   color: #333;
   border-radius: 5px;
@@ -304,6 +330,8 @@ html,
   margin-top: 4em;
   text-align: center;
   padding: 1em;
+  overflow: auto;
+  z-index: 6;
 }
 .bio {
   position: relative;
@@ -314,7 +342,7 @@ html,
   width: 40em;
   font-weight: bold;
   text-align: center;
-  z-index: 0;
+  z-index: 6;
   color: #fff3f3;
 }
 .bio > h1 {
@@ -335,6 +363,16 @@ html,
   padding-top: 1em;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1398px) {
+  .navbar {
+    margin-right: -1em;
+  }
+  .aboutme-content {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -373,9 +411,7 @@ html,
   /* about me page */
   .aboutme-content {
     width: 25%;
-    height: 24em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    min-height: 24em;
     margin-top: 2em;
   }
   .bio {
@@ -397,14 +433,22 @@ html,
     margin-top: 2em;
   }
 
-  #border {
-    border: 3em solid #fff;
-    border-left: none;
-    border-right: none;
-  }
   .iconsTop,
   .iconsBottom {
     height: 3em;
+  }
+  .iconsTop {
+    background-image: linear-gradient(160deg, #e14747, #e14747, #ff4343);
+    color: #fff3f3;
+  }
+  .iconsTop > i {
+    color: #fff3f3;
+  }
+  .borderLeft {
+    background: none;
+  }
+  .borderRight {
+    background: none;
   }
 
   .navbar {
@@ -417,7 +461,7 @@ html,
 
   .bio {
     font-size: 0.9em;
-    max-width: 30em;
+    width: 90%;
     margin-left: -15em;
   }
   .bio > h1 {
@@ -434,5 +478,9 @@ html,
   .projects-container {
     width: 85%;
     margin-left: -45%;
+  }
+
+  #intro > span {
+    text-decoration-color: #ff4343;
   }
 }
