@@ -428,13 +428,17 @@ html,
     width: 70%;
     margin-left: -35%;
   }
+  .project-lang > span {
+    font-size: 0.9em;
+  }
 }
 
 @media only screen and (max-width: 780px) {
   /* aboutme */
   .aboutme-content {
-    width: 30%;
-    height: 27em;
+    width: 32%;
+    height: 29em;
+    padding: 0.75em;
     margin: 0;
     margin-top: 2em;
   }
@@ -465,10 +469,7 @@ html,
   .bio > h1 {
     color: #333;
   }
-  .aboutme-content {
-    height: 29em;
-    padding: 0.75em;
-  }
+
   .aboutme-content > p {
     font-size: 0.9em;
   }
@@ -500,7 +501,8 @@ html,
 
   .navbar {
     margin-top: 0;
-    height: 4em;
+    padding-top: 0.5em;
+    height: 3.5em;
     background: #ff4343;
   }
 
