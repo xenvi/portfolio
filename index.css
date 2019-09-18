@@ -319,6 +319,7 @@ html,
   justify-content: center;
 }
 .aboutme-content {
+  position: relative;
   width: 18%;
   height: 50%;
   background: #fff3f3;
@@ -478,6 +479,8 @@ html,
   .projects-container {
     width: 85%;
     margin-left: -45%;
+    height: 65%;
+    margin-top: -35%;
   }
 
   #intro > span {
