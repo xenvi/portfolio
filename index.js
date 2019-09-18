@@ -19,12 +19,12 @@ $(document).ready(function() {
 
 var windowsize = $(window).width();
 
-if (windowsize <= 780) {
+if (windowsize <= 1080) {
   $(".whitebar").animate(
     {
       width: "100%",
       height: "100%",
-      marginTop: "70%"
+      marginTop: "62.5%"
     },
     1000
   );
