@@ -24,7 +24,7 @@ if (windowsize <= 780) {
     {
       width: "100%",
       height: "100%",
-      marginTop: "71%"
+      marginTop: "80%"
     },
     1000
   );
