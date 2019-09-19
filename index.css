@@ -183,7 +183,6 @@ html,
   top: 50%;
   margin-top: -20em;
   text-align: center;
-
   box-shadow: 1.5em 1.5em 0 #ce4b4b;
 }
 .project {
@@ -485,8 +484,8 @@ html,
     width: 90%;
     margin-left: -45%;
     height: 70%;
-    margin-top: -27em;
-    box-shadow: 0 1.5em 0 #ce4b4b;
+    margin-top: -25em;
+    box-shadow: none;
   }
 
   .projectsHeading {
@@ -502,6 +501,9 @@ html,
   .project-desc {
     padding-left: 1em;
     padding-right: 1em;
+    margin-top: -1.5em;
+    height: 8.5em;
+    font-size: 0.9em;
   }
 
   #intro > span {
@@ -531,5 +533,12 @@ html,
 
   .navbar > ul > li {
     text-shadow: 0 0 0.1em rgb(117, 2, 2);
+  }
+  .project-lang {
+    display: block;
+    padding: 0.5em 0.2em 0 0.2em;
+  }
+  .project-lang > span {
+    margin: 0;
   }
 }
