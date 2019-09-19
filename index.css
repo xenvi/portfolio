@@ -482,15 +482,26 @@ html,
   /* PROJECTS */
 
   .projects-container {
-    width: 85%;
+    width: 90%;
     margin-left: -45%;
     height: 70%;
-    margin-top: -20em;
+    margin-top: -27em;
+    box-shadow: 0 1.5em 0 #ce4b4b;
   }
 
   .projectsHeading {
-    display: block;
-    color: #fff3f3;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #333;
+    z-index: 7;
+    width: 100%;
+    margin-top: 2em;
+    font-weight: bold;
+  }
+  .project-desc {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   #intro > span {
