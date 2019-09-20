@@ -142,6 +142,7 @@
   }
   .bio > h1 {
     color: #333;
+    margin-top: 1.25em;
   }
 
   .aboutme-content > p {
