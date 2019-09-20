@@ -433,28 +433,20 @@ html,
   .project-lang > span {
     font-size: 0.9em;
   }
+  .iconsIntro,
+  .iconsIntro > i {
+    color: #333;
+  }
 }
 
 @media only screen and (max-width: 780px) {
-  /* aboutme */
-  .bio {
-    margin-top: 5.5em;
-  }
-  .aboutme-content {
-    width: 32%;
-    height: 29em;
-    padding: 0.75em;
-    margin: 0;
-    margin-top: 2em;
-  }
-
+  /* all */
   .iconsTop,
   .iconsBottom {
     height: 3em;
   }
   .iconsTop {
-    background: #ff4343;
-    color: #fff3f3;
+    display: none;
   }
   .iconsTop > i {
     color: #fff3f3;
@@ -466,21 +458,55 @@ html,
     background: none;
   }
 
+  .navbar {
+    margin-top: 0;
+    padding-top: 1em;
+    height: 3.5em;
+    background: #ff4343;
+  }
+  .navbar > ul > li {
+    text-shadow: 0 0 0.1em rgb(117, 2, 2);
+  }
+
+  /* home */
+  #intro > span {
+    text-decoration: none;
+  }
+  #intro {
+    height: 230px;
+    margin-top: -115px;
+  }
+  .iconsIntro {
+    display: flex;
+  }
+  .iconsIntro,
+  .iconsIntro > i {
+    color: #ff4343;
+  }
+
+  /* aboutme */
+  .aboutme-content {
+    width: 32%;
+    height: 29em;
+    padding: 0.75em;
+    margin: 0;
+    margin-top: 2em;
+  }
   .bio {
+    margin-top: 5em;
     font-size: 0.9em;
     width: 90%;
     margin-left: -45%;
   }
   .bio > h1 {
     color: #333;
-    margin-top: 0.5em;
   }
 
   .aboutme-content > p {
     font-size: 0.9em;
   }
-  /* PROJECTS */
 
+  /* projects */
   .projects-container {
     width: 90%;
     margin-left: -45%;
@@ -496,7 +522,7 @@ html,
     color: #333;
     z-index: 7;
     width: 100%;
-    margin-top: 1.2em;
+    margin-top: 2em;
     font-weight: bold;
   }
   .project-desc {
@@ -506,35 +532,6 @@ html,
     height: 8.5em;
     font-size: 0.9em;
     overflow: auto;
-  }
-
-  #intro > span {
-    text-decoration: none;
-  }
-  #intro {
-    height: 250px;
-    margin-top: -125px;
-  }
-  .iconsIntro {
-    display: flex;
-  }
-  .iconsIntro,
-  .iconsIntro > i {
-    color: #ff4343;
-  }
-  .iconsTop {
-    display: none;
-  }
-
-  .navbar {
-    margin-top: 0;
-    padding-top: 1em;
-    height: 3.5em;
-    background: #ff4343;
-  }
-
-  .navbar > ul > li {
-    text-shadow: 0 0 0.1em rgb(117, 2, 2);
   }
   .project-lang {
     display: block;
