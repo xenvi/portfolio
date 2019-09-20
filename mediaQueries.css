@@ -225,6 +225,7 @@
   /* project language row */
   .project-lang {
     color: #333;
+    height: auto;
   }
   .project-lang > span {
     display: inline-block;
@@ -245,7 +246,7 @@
     padding-left: 1em;
     padding-right: 1em;
     height: 5em;
-    margin-top: -1.5em;
+    margin-top: -1.4em;
   }
 
   /* project link to github / live row */
