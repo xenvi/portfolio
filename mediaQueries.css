@@ -225,7 +225,7 @@
   /* project language row */
   .project-lang {
     color: #333;
-    height: auto;
+    padding-bottom: 0.3em;
   }
   .project-lang > span {
     display: inline-block;
