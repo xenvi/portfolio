@@ -165,19 +165,30 @@
     font-weight: bold;
   }
   .project-desc {
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-weight: bold;
     padding-left: 1em;
     padding-right: 1em;
-    margin-top: -0.5em;
-    height: 8.5em;
-    font-size: 0.9em;
-    overflow: auto;
+    height: 5em;
+    margin-top: -1.5em;
   }
   .project-lang {
+    color: #333;
     display: block;
-    padding: 0.5em 0.2em 0 0.2em;
+    padding: 0.5em 0.2em 0.2em 0.2em;
   }
   .project-lang > span {
     margin: 0;
+    display: inline-block;
+    position: relative;
+    margin-top: 0.2em;
+    padding: 0.2em;
+    border-radius: 5px;
+    border: 1px solid #ff4343;
   }
   .project {
     width: 100%;
@@ -220,33 +231,6 @@
   }
   .project:nth-child(3):hover .redOverlayBottom {
     bottom: 25%;
-  }
-
-  /* project language row */
-  .project-lang {
-    color: #333;
-    padding-bottom: 0.3em;
-  }
-  .project-lang > span {
-    display: inline-block;
-    position: relative;
-    margin-top: 0.2em;
-    padding: 0.2em;
-    border-radius: 5px;
-    border: 1px solid #ff4343;
-  }
-
-  /* project description row */
-  .project-desc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333;
-    font-weight: bold;
-    padding-left: 1em;
-    padding-right: 1em;
-    height: 5em;
-    margin-top: -1.4em;
   }
 
   /* project link to github / live row */
