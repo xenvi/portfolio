@@ -68,6 +68,9 @@
 
 /* PHONE */
 @media only screen and (max-width: 780px) {
+   body {
+    padding-bottom: 5em;
+  }
   /* all */
   .whitebar {
     transform: rotate(100deg);
