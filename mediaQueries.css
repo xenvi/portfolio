@@ -68,9 +68,6 @@
 
 /* PHONE */
 @media only screen and (max-width: 780px) {
-   body {
-    padding-bottom: 5em;
-  }
   /* all */
   .whitebar {
     transform: rotate(100deg);
@@ -135,10 +132,10 @@
     margin-top: 2em;
   }
   .bio {
-    margin-top: 5em;
     font-size: 0.9em;
     width: 90%;
     margin-left: -45%;
+    margin-top: 0;
   }
   .bio > h1 {
     color: #333;
