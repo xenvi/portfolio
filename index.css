@@ -5,11 +5,7 @@ html,
   padding: 0;
   margin: 0;
   font-size: 1rem;
-  overflow: hidden;
   font-family: "Karla", sans-serif;
-}
-
-.wrapper {
   overflow: hidden;
 }
 
@@ -175,7 +171,7 @@ html,
   flex-direction: row;
   align-items: center;
   width: 60%;
-  height: 40em;
+  height: 70%;
   position: relative;
   z-index: 6;
   left: 50%;
@@ -184,6 +180,7 @@ html,
   margin-top: -20em;
   text-align: center;
   box-shadow: 1.5em 1.5em 0 #ce4b4b;
+  overflow: hidden;
 }
 .project {
   width: 50%;
@@ -193,9 +190,8 @@ html,
 .project > img {
   display: block;
   position: relative;
-  width: auto;
+  width: 100%;
   height: 100%;
-  margin-left: -4em;
 }
 
 /* overlay top projects */
