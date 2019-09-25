@@ -7,6 +7,9 @@
     margin-left: 0.5em;
     margin-right: 0.5em;
   }
+  body {
+    overflow: auto;
+  }
 }
 
 /* ABLET */
@@ -68,6 +71,9 @@
 
 /* PHONE */
 @media only screen and (max-width: 780px) {
+  html {
+    overflow: auto;
+  }
   /* all */
   .whitebar {
     transform: rotate(100deg);
@@ -237,14 +243,14 @@
   /* project link to github / live row */
   .redOverlayTop > .project-links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
     width: 100%;
     background: #ff4343;
     height: 3em;
     padding: 0.25em;
-    margin-top: 2.3em;
+    margin-top: 2.65em;
     border-top: 0.5em solid #ce4b4b;
   }
   .redOverlayTop > .project-links > a {
@@ -256,7 +262,7 @@
   }
   .redOverlayBottom > .project-links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
     width: 100%;
